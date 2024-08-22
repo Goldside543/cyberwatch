@@ -48,7 +48,7 @@ public class MainMenu extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 // Launch internetadventure class from the same JAR and exit MainMenu
                 try {
-                    String command = "xterm -T 'Internet Adventure' -e java -cp internetadventure.jar internetadventure";
+                    String command = "xterm -hold -T 'Internet Adventure' -e java -cp internetadventure.jar internetadventure";
                     ProcessBuilder pb = new ProcessBuilder("sh", "-c", command);
                     pb.inheritIO(); // Inherit IO to allow xterm to display output
                     pb.start();
