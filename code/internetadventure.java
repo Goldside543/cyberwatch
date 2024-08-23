@@ -21,6 +21,19 @@ public class internetadventure {
         }
     }
 
+    private static int getUserChoice(int numberOfChoices) {
+        int choice = 0;
+        while (choice < 1 || choice > numberOfChoices) {
+            System.out.print("Enter your choice (1-" + numberOfChoices + "): ");
+            if (scanner.hasNextInt()) {
+                choice = scanner.nextInt();
+            } else {
+                scanner.next(); // clear invalid input
+            }
+        }
+        return choice;
+    }
+
     private static void openEmail() {
         System.out.println("The email is from an unknown sender with a subject: 'You've Won a Prize!'");
         System.out.println("1. Click the link in the email");
