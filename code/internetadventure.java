@@ -142,7 +142,7 @@ public class internetadventure {
         if (choice == 1) {
             changePasswords();
         } else if (choice == 2) {
-            continueUsingComputer();
+            continueBrowsing();
         }
     }
 
@@ -183,9 +183,9 @@ public class internetadventure {
         int choice = getUserChoice(3);
 
         if (choice == 1) {
-            shareNews();
+            shareArticle();
         } else if (choice == 2) {
-            searchDetails();
+            continueBrowsing();
         } else if (choice == 3) {
             discussNews();
         }
@@ -287,11 +287,6 @@ public class internetadventure {
         endStory();
     }
 
-    private static void runSecurityScan() {
-        System.out.println("You run a security scan and your system is clean. You feel relieved.");
-        endStory();
-    }
-
     private static void commentPhoto() {
         System.out.println("You leave a comment on the photo, and your friend thanks you for it.");
         endStory();
@@ -329,21 +324,6 @@ public class internetadventure {
 
     private static void bookmarkBlog() {
         System.out.println("You bookmark the blog for future reference, ensuring you have access to more online safety tips.");
-        endStory();
-    }
-
-    private static void shareArticle() {
-        System.out.println("You share the article with your friends, helping them stay informed about online safety.");
-        endStory();
-    }
-
-    private static void inviteHangout() {
-        System.out.println("You invite your friend to hang out and they agree. You have a great time together.");
-        endStory();
-    }
-
-    private static void continueChatting() {
-        System.out.println("You continue chatting with your friend online. The conversation is enjoyable.");
         endStory();
     }
 
