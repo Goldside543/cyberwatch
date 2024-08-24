@@ -7,7 +7,7 @@ public class MainMenu extends JFrame {
 
     public MainMenu() {
         // Set up the frame
-        setTitle("Internet Adventure");
+        setTitle("Cyberwatch");
         setSize(400, 300); // Adjust size as needed
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Center the frame on the screen
@@ -17,7 +17,7 @@ public class MainMenu extends JFrame {
         panel.setLayout(new BorderLayout());
 
         // Create and style the title label
-        JLabel titleLabel = new JLabel("Internet Adventure", SwingConstants.CENTER);
+        JLabel titleLabel = new JLabel("Cyberwatch", SwingConstants.CENTER);
         titleLabel.setFont(new Font("Arial", Font.BOLD, 18)); // Font size and style
         titleLabel.setPreferredSize(new Dimension(400, 50)); // Adjust title panel size
         panel.add(titleLabel, BorderLayout.NORTH);
@@ -46,9 +46,9 @@ public class MainMenu extends JFrame {
         launchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Launch internetadventure class from the same JAR and exit MainMenu
+                // Launch cyberwatch class from the same JAR and exit MainMenu
                 try {
-                    String command = "xterm -hold -T 'Internet Adventure' -e java -cp internetadventure.jar internetadventure";
+                    String command = "xterm -hold -T 'Cyberwatch' -e java -cp cyberwatch.jar cyberwatch";
                     ProcessBuilder pb = new ProcessBuilder("sh", "-c", command);
                     pb.inheritIO(); // Inherit IO to allow xterm to display output
                     pb.start();
