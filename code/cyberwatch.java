@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class internetadventure {
+public class cyberwatch {
 
     private static Scanner scanner = new Scanner(System.in);
 
